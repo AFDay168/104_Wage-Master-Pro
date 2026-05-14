@@ -1,0 +1,5 @@
+{
+  "name": "WageMaster Pro",
+  "description": "A sophisticated wage calculation tool that processes attendance files against staff lists and templates to generate individual payroll reports and PDF exports.",
+  "requestFramePermissions": []
+}
