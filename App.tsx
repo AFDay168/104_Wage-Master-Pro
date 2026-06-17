@@ -78,12 +78,13 @@ const App: React.FC = () => {
   };
 
   const handleFileUpload = (type: keyof AppState, file: File | null) => {
+    const source = file && file.name.endsWith('.json') ? 'json' : file ? 'local' : 'local';
     setState(prev => ({ 
       ...prev, 
       [type]: { 
         file: file, 
         name: file ? file.name : '', 
-        source: 'local' 
+        source: source 
       } as AppFile 
     }));
   };
@@ -109,68 +110,89 @@ const App: React.FC = () => {
     setState(prev => ({ ...prev, isProcessing: true, error: null }));
 
     try {
+      // --- Read Staff List (JSON or xlsx) ---
       let staffData: StaffInfo[] = [];
-      let targetSheet: XLSX.WorkSheet | null = null;
 
-      if (state.staffListFile.source === 'local' && state.staffListFile.file) {
-        const staffListBuffer = await state.staffListFile.file.arrayBuffer();
-        const staffWorkbook = XLSX.read(staffListBuffer);
-        const staffSheet = staffWorkbook.Sheets[staffWorkbook.SheetNames[0]];
-        staffData = XLSX.utils.sheet_to_json<StaffInfo>(staffSheet);
-      } else {
-        staffData = [
-          { "Full Name": "John Doe", "Wages": 80, "Remark": "" },
-          { "Full Name": "Jane Smith", "Wages": 95, "Remark": "MPF" },
-          { "Full Name": "Alice Wong", "Wages": 110, "Remark": "FT" }
-        ];
+      if (state.staffListFile.source === 'json' || state.staffListFile.name.endsWith('.json')) {
+        // JSON format (our staff-list.json)
+        const text = await state.staffListFile.file!.text();
+        const json = JSON.parse(text);
+        staffData = (json.staff || json).map((s: any) => ({
+          "Full Name": s.name,
+          Wages: s.wageRate,
+          Remark: s.type === 'FT' ? 'FT' : s.type === 'special' ? 'Special' : s.remark || '',
+          type: s.type,
+          since: s.since,
+        }));
+      } else if (state.staffListFile.source === 'local' && state.staffListFile.file) {
+        const buffer = await state.staffListFile.file.arrayBuffer();
+        const workbook = XLSX.read(buffer);
+        const sheet = workbook.Sheets[workbook.SheetNames[0]];
+        staffData = XLSX.utils.sheet_to_json<StaffInfo>(sheet);
       }
 
+      // Build FT lookup
       const ftStaffNames = new Set(
         staffData
-          .filter(s => s.Remark?.toUpperCase().includes("FT"))
+          .filter(s => (s.Remark?.toUpperCase().includes("FT") || s.type === 'FT'))
           .map(s => s["Full Name"])
       );
 
+      // --- Read Wages (CSV or xlsx) ---
+      let rawWages: any[] = [];
+      const isCSV = state.wagesFile.name.endsWith('.csv');
+
       if (state.wagesFile.source === 'local' && state.wagesFile.file) {
-        const wagesBuffer = await state.wagesFile.file.arrayBuffer();
-        const wagesWorkbook = XLSX.read(wagesBuffer);
-        for (const name of wagesWorkbook.SheetNames) {
-          const sheet = wagesWorkbook.Sheets[name];
-          const v1Address = XLSX.utils.encode_cell({ r: 0, c: 21 });
-          if (sheet[v1Address]?.v === '#') {
-            targetSheet = sheet;
-            break;
+        const buffer = await state.wagesFile.file.arrayBuffer();
+
+        if (isCSV) {
+          // Parse CSV via xlsx library
+          const text = new TextDecoder().decode(buffer);
+          const workbook = XLSX.read(text, { type: 'string', raw: true });
+          const sheet = workbook.Sheets[workbook.SheetNames[0]];
+          rawWages = XLSX.utils.sheet_to_json<any>(sheet, { defval: "", raw: true });
+        } else {
+          // Parse xlsx
+          const workbook = XLSX.read(buffer);
+          let targetSheet: XLSX.WorkSheet | null = null;
+          for (const name of workbook.SheetNames) {
+            const sheet = workbook.Sheets[name];
+            const v1Address = XLSX.utils.encode_cell({ r: 0, c: 21 });
+            if (sheet[v1Address]?.v === '#') {
+              targetSheet = sheet;
+              break;
+            }
           }
+          if (!targetSheet) {
+            throw new Error("Could not find a tab with '#' in cell V1.");
+          }
+          rawWages = XLSX.utils.sheet_to_json<any>(targetSheet, { header: "A", defval: "" });
         }
-      } else {
-        throw new Error("Local Wages file upload required for parsing accuracy.");
       }
 
-      if (!targetSheet) {
-        throw new Error("Could not find a tab with '#' in cell V1.");
-      }
-
-      const rawWages = XLSX.utils.sheet_to_json<any>(targetSheet, { header: "A", defval: "" });
-      
+      // --- Process: keep non-FT records with valid hours ---
       const filteredWages: WageRecord[] = rawWages
-        .slice(1) 
-        .filter(row => {
-          const vVal = row['V'];
-          const staffName = row['B'];
-          const isVEmpty = vVal === undefined || vVal === null || vVal === '';
-          const isNotFT = !ftStaffNames.has(staffName);
-          return isVEmpty && isNotFT;
-        }) 
-        .map(row => ({
-          Date: row['A'],
-          Name: row['B'],
-          "Time In": formatExcelTime(row['E']), // Corrected: reads from column E
-          "Time Out": formatExcelTime(row['F']), // Corrected: reads from column F
-          Lunch: formatExcelTime(row['H']), 
-          WkHr: extractWkHr(row['J']), 
+        .slice(1) // skip header row
+        .filter((row: any) => {
+          const staffName = row['Name'] || row['B'] || '';
+          const isFT = ftStaffNames.has(staffName) || (row['Staff Type'] || '').includes('FT');
+          const hasHours = extractWkHr(row['WkHr'] || row['J']) > 0;
+          return !isFT && hasHours;
+        })
+        .map((row: any) => ({
+          Date: row['Date'] || row['A'] || '',
+          Name: row['Name'] || row['B'] || '',
+          "Time In": formatExcelTime(row['Time In'] || row['E']),
+          "Time Out": formatExcelTime(row['Time Out'] || row['F']),
+          Lunch: formatExcelTime(row['Lunch'] || row['H']),
+          WkHr: extractWkHr(row['WkHr'] || row['J']),
+          "Staff Type": row['Staff Type'] || '',
+          "Wage $/hr": row['Wage $/hr'] ? Number(row['Wage $/hr']) : 0,
+          Status: row['Status'] || '',
         }))
         .filter(record => record.Name && record.Date);
 
+      // --- Group by staff, calculate wages ---
       const grouped = filteredWages.reduce((acc, curr) => {
         if (!acc[curr.Name]) acc[curr.Name] = [];
         acc[curr.Name].push(curr);
@@ -183,7 +205,11 @@ const App: React.FC = () => {
         if (!staffInfo) continue;
 
         const records = grouped[name].sort((a, b) => new Date(a.Date).getTime() - new Date(b.Date).getTime());
-        records.forEach(r => r.calculatedWage = r.WkHr * staffInfo.Wages);
+        records.forEach(r => {
+          // Use wage from CSV if available, else from staff list
+          const wageRate = r["Wage $/hr"] || staffInfo.Wages;
+          r.calculatedWage = r.WkHr * wageRate;
+        });
 
         const firstDate = new Date(records[0].Date);
         const monthYear = format(firstDate, "MMMM, yyyy");
@@ -197,9 +223,9 @@ const App: React.FC = () => {
         });
       }
 
-      setState(prev => ({ 
-        ...prev, 
-        results: finalResults, 
+      setState(prev => ({
+        ...prev,
+        results: finalResults,
         rawExtractedData: filteredWages,
         isProcessing: false,
         error: finalResults.length === 0 ? "No matching staff found (excluding FT)." : null
@@ -340,19 +366,21 @@ const App: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <FileCard 
           title="Attendance Data" 
-          description="Excel/CSV with # in V1"
+          description="CSV / Excel with # in V1"
           icon={<FileUp className="w-8 h-8 text-blue-500" />}
           onFileSelect={(f) => handleFileUpload('wagesFile', f)}
           onDriveSelect={() => setDrivePickerConfig({ type: 'wagesFile', title: 'Attendance' })}
           appFile={state.wagesFile}
+          accept=".csv,.xlsx,.xls"
         />
         <FileCard 
           title="Staff List" 
-          description="Names, Wages, Remarks"
+          description="JSON / Excel with Names, Wages"
           icon={<Users className="w-8 h-8 text-green-500" />}
           onFileSelect={(f) => handleFileUpload('staffListFile', f)}
           onDriveSelect={() => setDrivePickerConfig({ type: 'staffListFile', title: 'Staff List' })}
           appFile={state.staffListFile}
+          accept=".json,.xlsx,.xls"
         />
         <FileCard 
           title="Report Template" 
@@ -491,9 +519,10 @@ interface FileCardProps {
   onFileSelect: (file: File | null) => void;
   onDriveSelect: () => void;
   appFile: AppFile;
+  accept?: string;
 }
 
-const FileCard: React.FC<FileCardProps> = ({ title, description, icon, onFileSelect, onDriveSelect, appFile }) => {
+const FileCard: React.FC<FileCardProps> = ({ title, description, icon, onFileSelect, onDriveSelect, appFile, accept }) => {
   const isSelected = !!appFile.name;
   
   return (
@@ -513,7 +542,7 @@ const FileCard: React.FC<FileCardProps> = ({ title, description, icon, onFileSel
         <div className="flex flex-col w-full gap-2">
           <label className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-xl cursor-pointer hover:bg-indigo-100 transition-all active:scale-95">
             <FileUp className="w-4 h-4" /> Upload Local
-            <input type="file" className="hidden" onChange={(e) => onFileSelect(e.target.files?.[0] || null)} />
+            <input type="file" className="hidden" accept={accept} onChange={(e) => onFileSelect(e.target.files?.[0] || null)} />
           </label>
           <button 
             onClick={onDriveSelect}

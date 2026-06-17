@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-06-17",
+  "totalStaff": 30,
+  "staff": [
+    {
+      "name": "Henry Chan Chi Ho",
+      "type": "FT",
+      "wageRate": 0,
+      "since": "NA",
+      "remark": "FT"
+    },
+    {
+      "name": "Holly Yan Jiamei",
+      "type": "FT",
+      "wageRate": 0,
+      "since": "202601",
+      "remark": "FT"
+    },
+    {
+      "name": "Oscar Lai Hiu Kin",
+      "type": "FT",
+      "wageRate": 0,
+      "since": "NA",
+      "remark": "FT"
+    },
+    {
+      "name": "Loretta Leung Nga Yee",
+      "type": "PT",
+      "wageRate": 140,
+      "since": "202510",
+      "remark": "MPF"
+    },
+    {
+      "name": "Layton Yiu Siu Wah",
+      "type": "PT",
+      "wageRate": 130,
+      "since": "202210",
+      "remark": "MPF"
+    },
+    {
+      "name": "Joanna Hui Lai Na",
+      "type": "PT",
+      "wageRate": 120,
+      "since": "202310",
+      "remark": ""
+    },
+    {
+      "name": "Alice Chiu Wai Mui",
+      "type": "PT",
+      "wageRate": 110,
+      "since": "202503",
+      "remark": ""
+    },
+    {
+      "name": "Clara Cheung Ka Man",
+      "type": "PT",
+      "wageRate": 110,
+      "since": "202409",
+      "remark": ""
+    },
+    {
+      "name": "Mel Yiu Cho Lam",
+      "type": "PT",
+      "wageRate": 110,
+      "since": "202510",
+      "remark": ""
+    },
+    {
+      "name": "Belle Chan Cheuk Yiu",
+      "type": "PT",
+      "wageRate": 100,
+      "since": "202601",
+      "remark": ""
+    },
+    {
+      "name": "Cinda Chan Tsz Ching",
+      "type": "PT",
+      "wageRate": 100,
+      "since": "202512",
+      "remark": ""
+    },
+    {
+      "name": "Clara Cheung Wing Kum",
+      "type": "PT",
+      "wageRate": 100,
+      "since": "202505",
+      "remark": ""
+    },
+    {
+      "name": "Hugo Cheng King Hin",
+      "type": "PT",
+      "wageRate": 100,
+      "since": "202601",
+      "remark": ""
+    },
+    {
+      "name": "Suki Wong Yin Kiu",
+      "type": "PT",
+      "wageRate": 100,
+      "since": "202508",
+      "remark": ""
+    },
+    {
+      "name": "Bryan Leung Ka Hin",
+      "type": "PT",
+      "wageRate": 100,
+      "since": "202604",
+      "remark": ""
+    },
+    {
+      "name": "Chloe Chau Yat Kwan",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202409",
+      "remark": ""
+    },
+    {
+      "name": "Dennis Luk Man Chun",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202509",
+      "remark": ""
+    },
+    {
+      "name": "Dennis Siu King Sum",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202509",
+      "remark": ""
+    },
+    {
+      "name": "Fred Tsang Yu Ting",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202506",
+      "remark": ""
+    },
+    {
+      "name": "Jeffrey Mak Tsun Yu",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202509",
+      "remark": ""
+    },
+    {
+      "name": "Debbie Law Hoi Yiu",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202601",
+      "remark": ""
+    },
+    {
+      "name": "Sisyphus Wong Shu Kwok",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202601",
+      "remark": ""
+    },
+    {
+      "name": "Phoebe Tse Tin Yan",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202604",
+      "remark": ""
+    },
+    {
+      "name": "Vivian Ng Yan Yung",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202605",
+      "remark": ""
+    },
+    {
+      "name": "Janice Chan Sze Man",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202605",
+      "remark": ""
+    },
+    {
+      "name": "Gigi Cheung Man Chi",
+      "type": "PT",
+      "wageRate": 90,
+      "since": "202605",
+      "remark": ""
+    },
+    {
+      "name": "Frankie Fung Hoi Fung",
+      "type": "PT",
+      "wageRate": 85,
+      "since": "202603",
+      "remark": ""
+    },
+    {
+      "name": "Mary Chan Cho Yung",
+      "type": "PT",
+      "wageRate": 85,
+      "since": "202604",
+      "remark": ""
+    },
+    {
+      "name": "Lucas Lee Chun Ting",
+      "type": "PT",
+      "wageRate": 80,
+      "since": "202601",
+      "remark": ""
+    },
+    {
+      "name": "Katrina Wong",
+      "type": "special",
+      "wageRate": 0,
+      "since": "",
+      "remark": "Playgroup"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+#,Date,Name,RAW In,RAW Out,Time In,Time Out,Lunch,Status,Staff Type,Wage $/hr,WkHr,SchHr,EarlyIN,LateIN,EarlyOUT,OT,LateNett,OTNett,Pay $,Adj
+1,2026-05-02,Henry Chan Chi Ho,09:30,13:30,09:30,12:35,,mismatch,FT,0,3.08,4.0,20,0,55,0,35,0,0,Early20m→trim
+2,2026-05-02,Loretta Leung Nga Yee,09:30,13:00,09:30,13:00,,mismatch,PT,140,3.5,3.5,2,0,0,0,0,2,490,Early2m→trim
+3,2026-05-02,Oscar Lai Hiu Kin,09:30,13:30,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+4,2026-05-04,Cinda Chan Tsz Ching,15:30,19:00,,,,missing_punch,PT,100,0,0,0,0,0,0,0,0,0,
+5,2026-05-04,Clara Cheung Wing Kum,15:30,19:00,15:30,19:00,,missing_roster,PT,100,3.5,3.5,15,0,0,0,0,15,350,OCR: Clara Cheung Ka Man; Early15m→trim
+6,2026-05-04,Debbie Law Hoi Yiu,15:30,19:00,15:30,18:23,,mismatch,PT,90,2.88,3.5,16,0,37,0,21,0,259,Early16m→trim
+7,2026-05-04,Dennis Siu King Sum,14:00,18:00,14:00,18:28,,mismatch,PT,90,4.47,4.0,2,0,0,28,0,30,402,Early2m→trim
+8,2026-05-04,Henry Chan Chi Ho,13:00,19:00,13:00,18:54,,mismatch,FT,0,5.9,6.0,16,0,6,0,0,10,0,Early16m→trim
+9,2026-05-04,Holly Yan Jiamei,10:00,19:00,10:00,19:00,01:00,mismatch,FT,0,8.0,8.0,10,0,0,0,0,10,0,Early10m→trim
+10,2026-05-04,Loretta Leung Nga Yee,15:30,19:00,15:30,19:00,,mismatch,PT,140,3.5,3.5,14,0,0,0,0,14,490,Early14m→trim
+11,2026-05-04,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+12,2026-05-04,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,21,0,0,0,0,21,315,Early21m→trim
+13,2026-05-05,Clara Cheung Wing Kum,15:30,19:00,15:30,18:59,,missing_roster,PT,100,3.48,3.5,17,0,1,0,0,16,348,OCR: Clara Cheung Ka Man; Early17m→trim
+14,2026-05-05,Henry Chan Chi Ho,13:00,19:00,13:00,18:59,,mismatch,FT,0,5.98,6.0,11,0,1,0,0,10,0,Early11m→trim
+15,2026-05-05,Holly Yan Jiamei,10:00,19:00,10:00,18:54,01:00,mismatch,FT,0,7.9,8.0,8,0,6,0,0,2,0,Early8m→trim
+16,2026-05-05,Layton Yiu Siu Wah,15:30,19:00,15:30,18:58,,mismatch,PT,130,3.47,3.5,16,0,2,0,0,14,451,Early16m→trim
+17,2026-05-05,Loretta Leung Nga Yee,15:30,19:00,15:31,19:00,,mismatch,PT,140,3.48,3.5,0,1,0,0,1,0,487,
+18,2026-05-05,Mary Chan Cho Yung,15:30,19:00,15:30,18:53,,mismatch,PT,85,3.38,3.5,12,0,7,0,0,5,287,Early12m→trim
+19,2026-05-05,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+20,2026-05-05,Suki Wong Yin Kiu,14:00,18:00,14:02,19:08,,mismatch,PT,100,5.1,4.0,0,2,0,68,0,66,510,
+21,2026-05-06,Belle Chan Cheuk Yiu,15:30,19:00,15:30,18:20,,mismatch,PT,100,2.83,3.5,18,0,40,0,22,0,283,Early18m→trim
+22,2026-05-06,Clara Cheung Wing Kum,15:00,19:00,15:00,19:00,,missing_roster,PT,100,4.0,4.0,4,0,0,0,0,4,400,OCR: Clara Cheung Ka Man; Early4m→trim
+23,2026-05-06,Henry Chan Chi Ho,13:00,19:00,13:00,18:26,,mismatch,FT,0,5.43,6.0,18,0,34,0,16,0,0,Early18m→trim
+24,2026-05-06,Holly Yan Jiamei,10:00,19:00,10:00,18:50,01:00,mismatch,FT,0,7.83,8.0,10,0,10,0,0,0,0,Early10m→trim
+25,2026-05-06,Loretta Leung Nga Yee,15:30,19:00,15:30,19:00,,mismatch,PT,140,3.5,3.5,14,0,0,0,0,14,490,Early14m→trim
+26,2026-05-06,Mary Chan Cho Yung,15:30,19:00,15:30,18:47,,mismatch,PT,85,3.28,3.5,13,0,13,0,0,0,279,Early13m→trim
+27,2026-05-06,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+28,2026-05-06,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,19,0,0,0,0,19,315,Early19m→trim
+29,2026-05-06,Suki Wong Yin Kiu,14:00,18:00,14:00,19:05,,mismatch,PT,100,5.08,4.0,4,0,0,65,0,69,508,Early4m→trim
+30,2026-05-07,Belle Chan Cheuk Yiu,15:30,19:00,15:30,19:00,,mismatch,PT,100,3.5,3.5,20,0,0,0,0,20,350,Early20m→trim
+31,2026-05-07,Bryan Leung Ka Hin,15:30,19:00,15:30,18:15,,mismatch,PT,100,2.75,3.5,0,0,45,0,45,0,275,
+32,2026-05-07,Clara Cheung Wing Kum,15:30,19:00,15:30,19:00,,missing_roster,PT,100,3.5,3.5,18,0,0,0,0,18,350,OCR: Clara Cheung Ka Man; Early18m→trim
+33,2026-05-07,Henry Chan Chi Ho,13:00,19:00,13:00,18:53,,mismatch,FT,0,5.88,6.0,19,0,7,0,0,12,0,Early19m→trim
+34,2026-05-07,Holly Yan Jiamei,10:00,19:00,10:00,18:57,01:00,mismatch,FT,0,7.95,8.0,9,0,3,0,0,6,0,Early9m→trim
+35,2026-05-07,Layton Yiu Siu Wah,15:30,19:00,15:30,19:00,,mismatch,PT,130,3.5,3.5,9,0,0,0,0,9,455,Early9m→trim
+36,2026-05-07,Loretta Leung Nga Yee,15:30,19:00,15:30,18:15,,mismatch,PT,140,2.75,3.5,7,0,45,0,38,0,385,Early7m→trim
+37,2026-05-07,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+38,2026-05-07,Suki Wong Yin Kiu,14:30,19:00,14:30,19:08,,mismatch,PT,100,4.63,4.5,44,0,0,8,0,52,463,Early44m→trim
+39,2026-05-08,Cinda Chan Tsz Ching,15:30,19:00,,,,missing_punch,PT,100,0,0,0,0,0,0,0,0,0,
+40,2026-05-08,Clara Cheung Wing Kum,15:30,19:00,15:30,19:01,,missing_roster,PT,100,3.52,3.5,30,0,0,1,0,31,352,OCR: Clara Cheung Ka Man; Early30m→trim
+41,2026-05-08,Debbie Law Hoi Yiu,15:30,19:00,15:30,18:56,,mismatch,PT,90,3.43,3.5,22,0,4,0,0,18,309,Early22m→trim
+42,2026-05-08,Henry Chan Chi Ho,13:00,19:00,13:00,18:22,,mismatch,FT,0,5.37,6.0,24,0,38,0,14,0,0,Early24m→trim
+43,2026-05-08,Holly Yan Jiamei,14:30,19:00,14:30,19:01,,mismatch,FT,0,4.52,4.5,21,0,0,1,0,22,0,Early21m→trim
+44,2026-05-08,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+45,2026-05-08,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,81,0,0,0,0,81,315,Early81m→FLAG
+46,2026-05-09,Henry Chan Chi Ho,09:30,13:30,09:30,12:15,,mismatch,FT,0,2.75,4.0,26,0,75,0,49,0,0,Early26m→trim
+47,2026-05-09,Holly Yan Jiamei,09:30,13:30,09:30,13:23,,mismatch,FT,0,3.88,4.0,17,0,7,0,0,10,0,Early17m→trim
+48,2026-05-09,Loretta Leung Nga Yee,09:30,13:00,09:30,13:00,,mismatch,PT,140,3.5,3.5,14,0,0,0,0,14,490,Early14m→trim
+49,2026-05-09,Oscar Lai Hiu Kin,09:30,13:30,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+50,2026-05-11,Clara Cheung Wing Kum,15:30,19:00,15:30,19:00,,missing_roster,PT,100,3.5,3.5,3,0,0,0,0,3,350,OCR: Clara Cheung Ka Man; Early3m→trim
+51,2026-05-11,Debbie Law Hoi Yiu,15:30,19:00,15:30,18:30,,mismatch,PT,90,3.0,3.5,21,0,30,0,9,0,270,Early21m→trim
+52,2026-05-11,Henry Chan Chi Ho,13:00,19:00,13:00,18:53,,mismatch,FT,0,5.88,6.0,16,0,7,0,0,9,0,Early16m→trim
+53,2026-05-11,Holly Yan Jiamei,10:00,19:00,09:47,,,mismatch,FT,0,0,0,0,0,0,0,0,0,0,
+54,2026-05-11,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+55,2026-05-11,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,78,0,0,0,0,78,315,Early78m→FLAG
+56,2026-05-11,Suki Wong Yin Kiu,14:30,19:00,14:30,19:00,,mismatch,PT,100,4.5,4.5,6,0,0,0,0,6,450,Early6m→trim
+57,2026-05-12,Clara Cheung Wing Kum,15:30,19:00,15:30,18:57,,missing_roster,PT,100,3.45,3.5,46,0,3,0,0,43,345,OCR: Clara Cheung Ka Man; Early46m→trim
+58,2026-05-12,Debbie Law Hoi Yiu,,,15:11,18:49,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+59,2026-05-12,Henry Chan Chi Ho,13:00,19:00,13:00,18:50,,mismatch,FT,0,5.83,6.0,6,0,10,0,4,0,0,Early6m→trim
+60,2026-05-12,Holly Yan Jiamei,10:00,19:00,10:00,18:57,01:00,mismatch,FT,0,7.95,8.0,6,0,3,0,0,3,0,Early6m→trim
+61,2026-05-12,Layton Yiu Siu Wah,15:30,19:00,15:30,19:00,,mismatch,PT,130,3.5,3.5,17,0,0,0,0,17,455,Early17m→trim
+62,2026-05-12,Mary Chan Cho Yung,15:30,19:00,15:30,18:49,,mismatch,PT,85,3.32,3.5,12,0,11,0,0,1,282,Early12m→trim
+63,2026-05-12,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+64,2026-05-12,Sisyphus Wong Shu Kwok,15:30,19:00,,,,missing_punch,PT,90,0,0,0,0,0,0,0,0,0,
+65,2026-05-13,Clara Cheung Wing Kum,15:00,19:00,15:00,18:56,,missing_roster,PT,100,3.93,4.0,34,0,4,0,0,30,393,OCR: Clara Cheung Ka Man; Early34m→trim
+66,2026-05-13,Debbie Law Hoi Yiu,,,15:13,18:52,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+67,2026-05-13,Henry Chan Chi Ho,13:00,19:00,13:00,18:34,,mismatch,FT,0,5.57,6.0,30,0,26,0,0,4,0,Early30m→trim
+68,2026-05-13,Holly Yan Jiamei,10:00,19:00,10:00,18:57,01:00,mismatch,FT,0,7.95,8.0,5,0,3,0,0,2,0,Early5m→trim
+69,2026-05-13,Mary Chan Cho Yung,15:30,19:00,15:30,18:51,,mismatch,PT,85,3.35,3.5,12,0,9,0,0,3,285,Early12m→trim
+70,2026-05-13,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+71,2026-05-13,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,19,0,0,0,0,19,315,Early19m→trim
+72,2026-05-13,Suki Wong Yin Kiu,15:30,19:00,15:30,19:00,,mismatch,PT,100,3.5,3.5,17,0,0,0,0,17,350,Early17m→trim
+73,2026-05-14,Bryan Leung Ka Hin,15:30,19:00,,,,missing_punch,PT,100,0,0,0,0,0,0,0,0,0,
+74,2026-05-14,Clara Cheung Wing Kum,15:30,19:00,15:30,18:56,,missing_roster,PT,100,3.43,3.5,10,0,4,0,0,6,343,OCR: Clara Cheung Ka Man; Early10m→trim
+75,2026-05-14,Henry Chan Chi Ho,13:00,19:00,13:00,18:50,,mismatch,FT,0,5.83,6.0,15,0,10,0,0,5,0,Early15m→trim
+76,2026-05-14,Holly Yan Jiamei,10:00,19:00,10:00,18:50,01:00,mismatch,FT,0,7.83,8.0,4,0,10,0,6,0,0,Early4m→trim
+77,2026-05-14,Layton Yiu Siu Wah,15:30,19:00,15:30,19:03,,mismatch,PT,130,3.55,3.5,15,0,0,3,0,18,462,Early15m→trim
+78,2026-05-14,Loretta Leung Nga Yee,15:30,19:00,15:30,19:00,,mismatch,PT,140,3.5,3.5,4,0,0,0,0,4,490,Early4m→trim
+79,2026-05-14,Mary Chan Cho Yung,15:30,19:00,15:30,18:49,,mismatch,PT,85,3.32,3.5,13,0,11,0,0,2,282,Early13m→trim
+80,2026-05-14,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+81,2026-05-14,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,19,0,0,0,0,19,315,Early19m→trim
+82,2026-05-15,Clara Cheung Wing Kum,15:30,19:00,15:30,19:00,,missing_roster,PT,100,3.5,3.5,48,0,0,0,0,48,350,OCR: Clara Cheung Ka Man; Early48m→trim
+83,2026-05-15,Debbie Law Hoi Yiu,15:30,19:00,15:30,18:46,,mismatch,PT,90,3.27,3.5,19,0,14,0,0,5,294,Early19m→trim
+84,2026-05-15,Henry Chan Chi Ho,13:00,19:00,13:00,18:34,,mismatch,FT,0,5.57,6.0,15,0,26,0,11,0,0,Early15m→trim
+85,2026-05-15,Holly Yan Jiamei,10:00,19:00,10:00,18:53,01:00,mismatch,FT,0,7.88,8.0,4,0,7,0,3,0,0,Early4m→trim
+86,2026-05-15,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+87,2026-05-15,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,22,0,0,0,0,22,315,Early22m→trim
+88,2026-05-15,Suki Wong Yin Kiu,15:30,19:00,15:30,19:00,,mismatch,PT,100,3.5,3.5,17,0,0,0,0,17,350,Early17m→trim
+89,2026-05-16,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+90,2026-05-16,Henry Chan Chi Ho,09:30,13:30,09:30,15:58,,mismatch,FT,0,6.47,4.0,9,0,0,148,0,157,0,Early9m→trim
+91,2026-05-16,Loretta Leung Nga Yee,09:30,13:00,09:30,13:00,,mismatch,PT,140,3.5,3.5,16,0,0,0,0,16,490,Early16m→trim
+92,2026-05-16,Oscar Lai Hiu Kin,09:30,13:30,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+93,2026-05-17,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+94,2026-05-17,Henry Chan Chi Ho,,,09:24,12:57,,missing_roster,FT,0,0,0,0,0,0,0,0,0,0,
+95,2026-05-18,Clara Cheung Wing Kum,14:00,19:00,14:00,18:59,,mismatch,PT,100,4.98,5.0,5,0,1,0,0,4,498,Early5m→trim
+96,2026-05-18,Debbie Law Hoi Yiu,14:00,17:30,14:00,18:52,,mismatch,PT,90,4.87,3.5,19,0,0,82,0,101,438,Early19m→trim
+97,2026-05-18,Henry Chan Chi Ho,13:00,19:00,13:00,17:23,,mismatch,FT,0,4.38,6.0,22,0,97,0,75,0,0,Early22m→trim
+98,2026-05-18,Holly Yan Jiamei,10:00,19:00,10:00,18:59,01:00,mismatch,FT,0,7.98,8.0,5,0,1,0,0,4,0,Early5m→trim
+99,2026-05-18,Loretta Leung Nga Yee,14:00,17:30,14:00,17:00,,mismatch,PT,140,3.0,3.5,13,0,30,0,17,0,420,Early13m→trim
+100,2026-05-18,Mary Chan Cho Yung,14:30,18:00,14:30,17:50,,mismatch,PT,85,3.33,3.5,13,0,10,0,0,3,283,Early13m→trim
+101,2026-05-18,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+102,2026-05-19,Clara Cheung Wing Kum,15:00,19:00,15:00,19:00,,mismatch,PT,100,4.0,4.0,7,0,0,0,0,7,400,Early7m→trim
+103,2026-05-19,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+104,2026-05-19,Henry Chan Chi Ho,13:00,19:00,13:00,18:54,,mismatch,FT,0,5.9,6.0,27,0,6,0,0,21,0,Early27m→trim
+105,2026-05-19,Holly Yan Jiamei,10:00,19:00,10:00,18:54,01:00,mismatch,FT,0,7.9,8.0,0,0,6,0,6,0,0,
+106,2026-05-19,Layton Yiu Siu Wah,15:30,19:00,15:30,19:00,,mismatch,PT,130,3.5,3.5,5,0,0,0,0,5,455,Early5m→trim
+107,2026-05-19,Loretta Leung Nga Yee,15:30,19:00,15:30,19:00,,mismatch,PT,140,3.5,3.5,13,0,0,0,0,13,490,Early13m→trim
+108,2026-05-19,Mary Chan Cho Yung,15:30,19:00,15:30,18:52,,mismatch,PT,85,3.37,3.5,12,0,8,0,0,4,286,Early12m→trim
+109,2026-05-19,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+110,2026-05-19,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,16,0,0,0,0,16,315,Early16m→trim
+111,2026-05-20,Clara Cheung Wing Kum,15:00,19:00,15:00,19:00,,mismatch,PT,100,4.0,4.0,19,0,0,0,0,19,400,Early19m→trim
+112,2026-05-20,Debbie Law Hoi Yiu,15:30,19:00,15:30,18:49,,mismatch,PT,90,3.32,3.5,22,0,11,0,0,11,299,Early22m→trim
+113,2026-05-20,Henry Chan Chi Ho,13:00,19:00,13:00,18:33,,mismatch,FT,0,5.55,6.0,18,0,27,0,9,0,0,Early18m→trim
+114,2026-05-20,Holly Yan Jiamei,10:00,19:00,10:00,18:50,01:00,mismatch,FT,0,7.83,8.0,9,0,10,0,1,0,0,Early9m→trim
+115,2026-05-20,Janice Chan Sze Man,15:30,19:00,15:30,19:00,,match,PT,90,3.5,3.5,0,0,0,0,0,0,315,
+116,2026-05-20,Loretta Leung Nga Yee,15:30,19:00,15:30,19:00,,mismatch,PT,140,3.5,3.5,25,0,0,0,0,25,490,Early25m→trim
+117,2026-05-20,Mary Chan Cho Yung,15:30,19:00,15:30,18:46,,mismatch,PT,85,3.27,3.5,13,0,14,0,1,0,278,Early13m→trim
+118,2026-05-20,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+119,2026-05-20,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,20,0,0,0,0,20,315,Early20m→trim
+120,2026-05-21,Clara Cheung Wing Kum,15:30,19:00,15:30,19:00,,mismatch,PT,100,3.5,3.5,18,0,0,0,0,18,350,Early18m→trim
+121,2026-05-21,Debbie Law Hoi Yiu,15:30,19:00,15:30,18:46,,mismatch,PT,90,3.27,3.5,21,0,14,0,0,7,294,Early21m→trim
+122,2026-05-21,Henry Chan Chi Ho,13:00,19:00,13:00,18:57,,mismatch,FT,0,5.95,6.0,14,0,3,0,0,11,0,Early14m→trim
+123,2026-05-21,Holly Yan Jiamei,10:00,19:00,10:00,18:49,01:00,mismatch,FT,0,7.82,8.0,3,0,11,0,8,0,0,Early3m→trim
+124,2026-05-21,Janice Chan Sze Man,15:30,19:00,15:30,19:00,,match,PT,90,3.5,3.5,0,0,0,0,0,0,315,
+125,2026-05-21,Layton Yiu Siu Wah,15:30,19:00,15:30,19:00,,mismatch,PT,130,3.5,3.5,13,0,0,0,0,13,455,Early13m→trim
+126,2026-05-21,Loretta Leung Nga Yee,15:30,19:00,15:30,19:00,,mismatch,PT,140,3.5,3.5,21,0,0,0,0,21,490,Early21m→trim
+127,2026-05-21,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+128,2026-05-21,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,17:00,,mismatch,PT,90,1.5,3.5,85,0,120,0,35,0,135,Early85m→FLAG
+129,2026-05-22,Clara Cheung Wing Kum,15:30,19:00,15:30,19:03,,mismatch,PT,100,3.55,3.5,54,0,0,3,0,57,355,Early54m→trim
+130,2026-05-22,Debbie Law Hoi Yiu,15:30,19:00,15:30,18:47,,mismatch,PT,90,3.28,3.5,25,0,13,0,0,12,295,Early25m→trim
+131,2026-05-22,Gigi Cheung Man Chi,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,16,0,0,0,0,16,315,Early16m→trim
+132,2026-05-22,Henry Chan Chi Ho,13:00,19:00,13:00,18:48,,mismatch,FT,0,5.8,6.0,2,0,12,0,10,0,0,Early2m→trim
+133,2026-05-22,Holly Yan Jiamei,14:30,19:00,14:30,19:02,,mismatch,FT,0,4.53,4.5,23,0,0,2,0,25,0,Early23m→trim
+134,2026-05-22,Janice Chan Sze Man,15:30,19:00,15:30,18:48,,mismatch,PT,90,3.3,3.5,15,0,12,0,0,3,297,Early15m→trim
+135,2026-05-22,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+136,2026-05-22,Sisyphus Wong Shu Kwok,15:30,19:00,15:12,,,mismatch,PT,90,0,0,0,0,0,0,0,0,0,
+137,2026-05-23,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+138,2026-05-23,Henry Chan Chi Ho,09:30,13:30,09:30,15:52,,mismatch,FT,0,6.37,4.0,0,0,0,142,0,142,0,
+139,2026-05-23,Holly Yan Jiamei,09:30,13:30,09:12,,,mismatch,FT,0,0,0,0,0,0,0,0,0,0,
+140,2026-05-23,Loretta Leung Nga Yee,09:30,13:00,09:30,13:00,,mismatch,PT,140,3.5,3.5,13,0,0,0,0,13,490,Early13m→trim
+141,2026-05-23,Oscar Lai Hiu Kin,09:30,13:30,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+142,2026-05-24,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+143,2026-05-24,Henry Chan Chi Ho,,,09:24,12:56,,missing_roster,FT,0,0,0,0,0,0,0,0,0,0,
+144,2026-05-24,Holly Yan Jiamei,,,11:09,14:15,,missing_roster,FT,0,0,0,0,0,0,0,0,0,0,
+145,2026-05-25,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+146,2026-05-25,Henry Chan Chi Ho,,,09:22,12:58,,missing_roster,FT,0,0,0,0,0,0,0,0,0,0,
+147,2026-05-25,Sisyphus Wong Shu Kwok,,,10:57,13:15,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+148,2026-05-26,Clara Cheung Wing Kum,15:30,19:00,15:30,19:00,,mismatch,PT,100,3.5,3.5,66,0,0,0,0,66,350,Early66m→FLAG
+149,2026-05-26,Debbie Law Hoi Yiu,15:30,19:00,15:30,18:48,,mismatch,PT,90,3.3,3.5,28,0,12,0,0,16,297,Early28m→trim
+150,2026-05-26,Gigi Cheung Man Chi,15:30,19:00,15:30,18:30,,mismatch,PT,90,3.0,3.5,22,0,30,0,8,0,270,Early22m→trim
+151,2026-05-26,Henry Chan Chi Ho,13:00,19:00,13:00,18:55,01:00,mismatch,FT,0,4.92,5.0,69,0,5,0,0,64,0,Early69m→FLAG
+152,2026-05-26,Holly Yan Jiamei,10:00,19:00,10:00,18:51,01:00,mismatch,FT,0,7.85,8.0,5,0,9,0,4,0,0,Early5m→trim
+153,2026-05-26,Layton Yiu Siu Wah,15:30,19:00,15:30,19:00,,mismatch,PT,130,3.5,3.5,16,0,0,0,0,16,455,Early16m→trim
+154,2026-05-26,Loretta Leung Nga Yee,15:30,19:00,15:30,19:00,,mismatch,PT,140,3.5,3.5,13,0,0,0,0,13,490,Early13m→trim
+155,2026-05-26,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+156,2026-05-26,Sisyphus Wong Shu Kwok,15:30,19:00,15:30,19:00,,mismatch,PT,90,3.5,3.5,16,0,0,0,0,16,315,Early16m→trim
+157,2026-05-27,Clara Cheung Wing Kum,15:00,19:00,15:00,19:00,,mismatch,PT,100,4.0,4.0,4,0,0,0,0,4,400,Early4m→trim
+158,2026-05-27,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+159,2026-05-27,Gigi Cheung Man Chi,14:00,18:00,14:00,18:00,,mismatch,PT,90,4.0,4.0,19,0,0,0,0,19,360,Early19m→trim
+160,2026-05-27,Henry Chan Chi Ho,13:00,19:00,13:00,18:39,01:00,mismatch,FT,0,4.65,5.0,167,0,21,0,0,146,0,Early167m→FLAG
+161,2026-05-27,Holly Yan Jiamei,10:00,19:00,09:54,,,mismatch,FT,0,0,0,0,0,0,0,0,0,0,
+162,2026-05-27,Janice Chan Sze Man,14:00,17:30,14:00,18:30,,mismatch,PT,90,4.5,3.5,0,0,0,60,0,60,405,
+163,2026-05-27,Loretta Leung Nga Yee,14:00,17:00,14:00,17:00,,mismatch,PT,140,3.0,3.0,20,0,0,0,0,20,420,Early20m→trim
+164,2026-05-27,Oscar Lai Hiu Kin,13:00,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+165,2026-05-27,Sisyphus Wong Shu Kwok,14:00,18:00,14:00,18:00,,mismatch,PT,90,4.0,4.0,19,0,0,0,0,19,360,Early19m→trim
+166,2026-05-28,Belle Chan Cheuk Yiu,14:00,18:00,14:00,18:00,,mismatch,PT,100,4.0,4.0,19,0,0,0,0,19,400,Early19m→trim
+167,2026-05-28,Clara Cheung Wing Kum,15:30,19:00,15:30,18:57,,mismatch,PT,100,3.45,3.5,17,0,3,0,0,14,345,Early17m→trim
+168,2026-05-28,Debbie Law Hoi Yiu,14:00,18:00,14:00,18:51,,mismatch,PT,90,4.85,4.0,19,0,0,51,0,70,436,Early19m→trim
+169,2026-05-28,Gigi Cheung Man Chi,16:00,19:00,16:00,19:00,,mismatch,PT,90,3.0,3.0,136,0,0,0,0,136,270,Early136m→FLAG
+170,2026-05-28,Henry Chan Chi Ho,12:30,19:00,12:30,19:13,01:00,mismatch,FT,0,5.72,5.5,69,0,0,13,0,82,0,Early69m→FLAG
+171,2026-05-28,Holly Yan Jiamei,10:00,19:00,10:00,18:57,01:00,mismatch,FT,0,7.95,8.0,5,0,3,0,0,2,0,Early5m→trim
+172,2026-05-28,Janice Chan Sze Man,14:00,18:30,14:00,18:30,,match,PT,90,4.5,4.5,0,0,0,0,0,0,405,
+173,2026-05-28,Layton Yiu Siu Wah,17:15,19:00,17:15,19:00,,mismatch,PT,130,1.75,1.75,14,0,0,0,0,14,228,Early14m→trim
+174,2026-05-28,Loretta Leung Nga Yee,14:00,18:30,14:00,18:30,,mismatch,PT,140,4.5,4.5,11,0,0,0,0,11,630,Early11m→trim
+175,2026-05-28,Oscar Lai Hiu Kin,12:30,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+176,2026-05-29,Clara Cheung Wing Kum,14:30,19:00,14:30,19:00,,mismatch,PT,100,4.5,4.5,19,0,0,0,0,19,450,Early19m→trim
+177,2026-05-29,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+178,2026-05-29,Gigi Cheung Man Chi,14:00,18:00,14:00,18:30,,mismatch,PT,90,4.5,4.0,13,0,0,30,0,43,405,Early13m→trim
+179,2026-05-29,Henry Chan Chi Ho,12:30,19:00,12:30,18:53,,mismatch,FT,0,6.38,6.5,25,0,7,0,0,18,0,Early25m→trim
+180,2026-05-29,Holly Yan Jiamei,14:30,19:00,14:30,18:49,,mismatch,FT,0,4.32,4.5,120,0,11,0,0,109,0,Early120m→FLAG
+181,2026-05-29,Loretta Leung Nga Yee,14:00,17:30,14:00,17:30,,mismatch,PT,140,3.5,3.5,12,0,0,0,0,12,490,Early12m→trim
+182,2026-05-29,Oscar Lai Hiu Kin,12:30,19:00,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+183,2026-05-29,Sisyphus Wong Shu Kwok,14:00,18:00,14:00,18:00,,mismatch,PT,90,4.0,4.0,23,0,0,0,0,23,360,Early23m→trim
+184,2026-05-30,Belle Chan Cheuk Yiu,,,10:01,14:45,,missing_roster,PT,100,0,0,0,0,0,0,0,0,0,
+185,2026-05-30,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+186,2026-05-30,Gigi Cheung Man Chi,,,09:15,15:01,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+187,2026-05-30,Henry Chan Chi Ho,09:30,13:30,09:30,12:56,,mismatch,FT,0,3.43,4.0,32,0,34,0,2,0,0,Early32m→trim
+188,2026-05-30,Holly Yan Jiamei,09:30,13:30,09:30,16:00,,mismatch,FT,0,6.5,4.0,21,0,0,150,0,171,0,Early21m→trim
+189,2026-05-30,Loretta Leung Nga Yee,09:30,13:00,09:30,13:00,,mismatch,PT,140,3.5,3.5,12,0,0,0,0,12,490,Early12m→trim
+190,2026-05-30,Oscar Lai Hiu Kin,09:30,13:30,,,,missing_punch,FT,0,0,0,0,0,0,0,0,0,0,
+191,2026-05-31,Belle Chan Cheuk Yiu,,,10:04,14:40,,missing_roster,PT,100,0,0,0,0,0,0,0,0,0,
+192,2026-05-31,Debbie Law Hoi Yiu,,,,,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+193,2026-05-31,Gigi Cheung Man Chi,,,09:15,14:30,,missing_roster,PT,90,0,0,0,0,0,0,0,0,0,
+194,2026-05-31,Holly Yan Jiamei,,,10:29,14:32,,missing_roster,FT,0,0,0,0,0,0,0,0,0,0,
